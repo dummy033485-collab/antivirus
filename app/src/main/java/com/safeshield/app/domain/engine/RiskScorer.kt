@@ -54,6 +54,21 @@ class RiskScorer @Inject constructor() {
             }
         }
 
+        // Dangerous COMBINATIONS, not just individual permissions. Reading SMS is
+        // ordinary for a messaging app; reading SMS *and* drawing over other apps is
+        // the signature of credential-stealing malware, so the pair scores extra.
+        val hasSms = input.permissions.any {
+            it in setOf(
+                "android.permission.READ_SMS",
+                "android.permission.RECEIVE_SMS",
+                "android.permission.SEND_SMS",
+            )
+        }
+        if (hasSms && input.permissions.contains("android.permission.SYSTEM_ALERT_WINDOW")) {
+            score += 15
+            reasons += R.string.perm_combo_sms_overlay
+        }
+
         if (input.isAccessibilityService) {
             score += 20; reasons += R.string.perm_accessibility
         }

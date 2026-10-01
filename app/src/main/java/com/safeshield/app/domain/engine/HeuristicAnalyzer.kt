@@ -65,6 +65,14 @@ class HeuristicAnalyzer @Inject constructor() {
             points += 30
             reasons += "Has no icon in your app list, so it runs without you seeing it."
         }
+        // Full dropper profile: invisible, sideloaded, and able to install more apps.
+        // Each trait alone is suspicious; together they are near-certain malware.
+        if (!c.hasLauncherIcon && c.installedFromUnknownSource &&
+            c.permissions.contains(INSTALL)
+        ) {
+            points += 15
+            reasons += "Hides itself, came from outside the Play Store, and can install more apps — a dropper."
+        }
         // Hard-to-remove.
         if (c.isDeviceAdmin && c.installedFromUnknownSource) {
             points += 30

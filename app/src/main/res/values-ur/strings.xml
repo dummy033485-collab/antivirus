@@ -67,6 +67,7 @@
     <string name="perm_device_admin">ڈیوائس ایڈمن ہے، اس لیے اسے ہٹانا مشکل ہے۔</string>
     <string name="perm_install_packages">آپ کے فون پر دوسری ایپس انسٹال کر سکتی ہے۔</string>
     <string name="perm_unknown_source">پلے اسٹور کے باہر سے انسٹال ہوئی ہے۔</string>
+    <string name="perm_combo_sms_overlay">آپ کے پیغامات بھی پڑھ سکتی ہے اور دوسری ایپس کے اوپر اسکرین بھی بنا سکتی ہے — یہ دونوں مل کر جعلی اسکرین سے لاگ ان کوڈ چرانے کے لیے استعمال ہوتے ہیں۔</string>
     <string name="perm_no_launcher">ایپ لسٹ میں اس کا آئیکن نہیں، یعنی یہ چھپی ہوئی ہے۔</string>
 
     <string name="tools_title">اوزار</string>

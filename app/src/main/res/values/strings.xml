@@ -72,6 +72,7 @@
     <string name="perm_device_admin">Is a device administrator, so it is hard to remove.</string>
     <string name="perm_install_packages">Can install other apps on your phone.</string>
     <string name="perm_unknown_source">Was installed from outside the Play Store.</string>
+    <string name="perm_combo_sms_overlay">Can read your text messages AND draw over other apps — together these let an app steal login codes with a fake screen.</string>
     <string name="perm_no_launcher">Has no icon in your app drawer, so it stays hidden.</string>
 
     <!-- Tools -->
