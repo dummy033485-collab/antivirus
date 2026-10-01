@@ -95,33 +95,28 @@ jobs:
 
       # The agent sandbox cannot reach GitHub's log-storage host, so on failure we
       # mirror the compiler output into an issue, which IS readable over the API.
+      # The agent sandbox cannot reach GitHub's log-storage host, so on failure we
+      # mirror the compiler output into a commit comment, readable over api.github.com.
       - name: Report failure details
         if: failure()
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          set +e
           {
             echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-            echo "Commit: ${GITHUB_SHA}"
             echo ""
-            echo '```'
-            grep -aE "^e: |error:|FAILURE:|Unresolved reference|Caused by:|> Task .* FAILED|^\s+at " build-output.log \
-              | head -c 50000 || true
+            echo '```text'
+            grep -aE "^e: |error:|FAILURE:|Unresolved reference|Caused by:|FAILED" build-output.log | head -c 40000
             echo '```'
             echo ""
-            echo "<details><summary>Last 200 lines</summary>"
-            echo ""
+            echo '```text'
+            tail -n 120 build-output.log | head -c 20000
             echo '```'
-            tail -n 200 build-output.log | head -c 50000 || true
-            echo '```'
-            echo "</details>"
           } > failure.md
-          gh issue create \
-            --title "CI failure ${GITHUB_SHA::7} (run ${{ github.run_id }})" \
-            --body-file failure.md \
-            --label "" || gh issue create \
-            --title "CI failure ${GITHUB_SHA::7} (run ${{ github.run_id }})" \
-            --body-file failure.md
+          gh api "repos/${GITHUB_REPOSITORY}/commits/${GITHUB_SHA}/comments" \
+            -f body="$(cat failure.md)" >/dev/null && echo "commit comment posted"
 
       - name: Upload raw build log
         if: always()
