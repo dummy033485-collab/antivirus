@@ -3,12 +3,12 @@ package com.safeshield.app.data.repository
 import android.app.usage.StorageStatsManager
 import android.content.Context
 import android.content.pm.PackageManager
-import android.os.Process
 import android.os.storage.StorageManager
 import com.safeshield.app.domain.model.JunkItem
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
+import com.safeshield.app.core.UsageAccess
 import java.io.File
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -29,15 +29,7 @@ class JunkRepository @Inject constructor(
     private val inventory: AppInventoryRepository,
     private val ioDispatcher: CoroutineDispatcher,
 ) {
-    fun hasUsageStatsPermission(): Boolean {
-        val appOps = context.getSystemService(android.app.AppOpsManager::class.java) ?: return false
-        val mode = appOps.unsafeCheckOpNoThrow(
-            android.app.AppOpsManager.OPSTR_GET_USAGE_STATS,
-            Process.myUid(),
-            context.packageName,
-        )
-        return mode == android.app.AppOpsManager.MODE_ALLOWED
-    }
+    fun hasUsageStatsPermission(): Boolean = UsageAccess.isGranted(context)
 
     suspend fun findJunk(): List<JunkItem> = withContext(ioDispatcher) {
         buildList {

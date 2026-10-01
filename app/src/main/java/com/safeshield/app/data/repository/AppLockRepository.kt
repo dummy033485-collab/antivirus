@@ -1,11 +1,10 @@
 package com.safeshield.app.data.repository
 
-import android.app.AppOpsManager
 import android.app.usage.UsageStatsManager
 import android.content.Context
 import android.content.Intent
-import android.os.Process
 import android.provider.Settings
+import com.safeshield.app.core.UsageAccess
 import com.safeshield.app.data.local.dao.LockedAppDao
 import com.safeshield.app.data.local.entity.LockedAppEntity
 import com.safeshield.app.data.prefs.SettingsRepository
@@ -50,12 +49,7 @@ class AppLockRepository @Inject constructor(
 
     // ---- Permission plumbing, explained to the user in the UI ----
 
-    fun hasUsageAccess(): Boolean {
-        val appOps = context.getSystemService(AppOpsManager::class.java) ?: return false
-        return appOps.unsafeCheckOpNoThrow(
-            AppOpsManager.OPSTR_GET_USAGE_STATS, Process.myUid(), context.packageName,
-        ) == AppOpsManager.MODE_ALLOWED
-    }
+    fun hasUsageAccess(): Boolean = UsageAccess.isGranted(context)
 
     fun hasOverlayPermission(): Boolean = Settings.canDrawOverlays(context)
 

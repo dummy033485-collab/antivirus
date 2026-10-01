@@ -48,7 +48,7 @@ object AppModule {
     @Provides @Singleton
     fun provideDatabase(@ApplicationContext context: Context): SafeShieldDatabase =
         Room.databaseBuilder(context, SafeShieldDatabase::class.java, Constants.DATABASE_NAME)
-            .fallbackToDestructiveMigration(dropAllTables = true)
+            .fallbackToDestructiveMigration()
             .build()
 
     @Provides fun provideSignatureDao(db: SafeShieldDatabase): SignatureDao = db.signatureDao()

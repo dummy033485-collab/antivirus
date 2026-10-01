@@ -80,7 +80,6 @@ fun ScoreRing(
     val track = MaterialTheme.colorScheme.surfaceVariant
 
     Box(modifier = modifier, contentAlignment = Alignment.Center) {
-        Canvas(Modifier.fillMaxWidth().height(0.dp)) { }
         Canvas(modifier = Modifier.matchParentSize()) {
             drawArc(
                 color = track,
