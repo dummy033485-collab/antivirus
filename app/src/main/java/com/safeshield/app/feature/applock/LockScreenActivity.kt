@@ -1,7 +1,6 @@
 package com.safeshield.app.feature.applock
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
@@ -27,6 +26,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
 import com.safeshield.app.R
 import com.safeshield.app.data.prefs.SettingsRepository
@@ -42,7 +42,7 @@ import javax.inject.Inject
  * the PIN as a fallback. The PIN is only ever compared as a salted hash.
  */
 @AndroidEntryPoint
-class LockScreenActivity : ComponentActivity() {
+class LockScreenActivity : FragmentActivity() {
 
     @Inject lateinit var appLock: AppLockRepository
     @Inject lateinit var settings: SettingsRepository
