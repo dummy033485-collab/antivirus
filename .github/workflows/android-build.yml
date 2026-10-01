@@ -114,6 +114,24 @@ jobs:
             echo '```text'
             tail -n 120 build-output.log | head -c 20000
             echo '```'
+            echo ""
+            echo "### Failing tests"
+            echo '```text'
+            python3 - <<'PYEOF'
+import glob, xml.etree.ElementTree as ET
+for f in glob.glob("app/build/test-results/**/*.xml", recursive=True):
+    try:
+        root = ET.parse(f).getroot()
+    except Exception:
+        continue
+    for tc in root.iter("testcase"):
+        for bad in list(tc.findall("failure")) + list(tc.findall("error")):
+            print(f"{tc.get('classname')}.{tc.get('name')}")
+            print((bad.get("message") or "")[:600])
+            print((bad.text or "")[:1200])
+            print("-" * 60)
+PYEOF
+            echo '```'
           } > failure.md
           gh api "repos/${GITHUB_REPOSITORY}/commits/${GITHUB_SHA}/comments" \
             -f body="$(cat failure.md)" || echo "POST failed with $?"
