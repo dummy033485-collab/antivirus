@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
+    alias(libs.plugins.room)
 }
 
 /** Reads secrets from local.properties (never committed) with env-var fallback for CI. */
@@ -35,7 +36,6 @@ android {
         manifestPlaceholders["admobAppId"] =
             secret("ADMOB_APP_ID", "ca-app-pub-3940256099942544~3347511713")
 
-        ksp { arg("room.schemaLocation", "$projectDir/schemas") }
         resourceConfigurations += listOf("en", "ur")
     }
 
@@ -77,6 +77,15 @@ android {
         resources.excludes += setOf("/META-INF/{AL2.0,LGPL2.1}", "META-INF/LICENSE*")
     }
     testOptions { unitTests.isReturnDefaultValues = true }
+}
+
+/**
+ * The Room Gradle plugin owns schema export. Passing room.schemaLocation as a raw
+ * KSP arg makes every variant write to the same folder concurrently, which fails
+ * the build with "Empty schema file"; the plugin gives each variant its own path.
+ */
+room {
+    schemaDirectory("$projectDir/schemas")
 }
 
 dependencies {
