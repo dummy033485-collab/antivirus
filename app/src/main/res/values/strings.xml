@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SafeShield</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_apps">Apps</string>
+    <string name="nav_tools">Tools</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home -->
+    <string name="home_title">SafeShield</string>
+    <string name="security_score">Security score</string>
+    <string name="scan_now">SCAN NOW</string>
+    <string name="quick_scan">Quick Scan</string>
+    <string name="full_scan">Full Scan</string>
+    <string name="custom_scan">Custom Scan</string>
+    <string name="quick_scan_desc">Checks every installed app. Takes a few seconds.</string>
+    <string name="full_scan_desc">Installed apps plus APK files in your storage.</string>
+    <string name="custom_scan_desc">Pick one folder and scan only that.</string>
+    <string name="last_scan">Last scan: %1$s</string>
+    <string name="never_scanned">You have never run a scan</string>
+    <string name="protected_status">You are protected</string>
+    <string name="at_risk_status">Action needed</string>
+    <string name="offline_mode_badge">Offline engine</string>
+    <string name="online_mode_badge">Offline + VirusTotal</string>
+
+    <!-- Scan progress -->
+    <string name="scanning">Scanning…</string>
+    <string name="scanned_count">%1$d of %2$d scanned</string>
+    <string name="threats_found">%1$d threats found</string>
+    <string name="time_remaining">About %1$s left</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="cancel">Cancel</string>
+    <string name="paused">Paused</string>
+    <string name="scan_complete">Scan complete</string>
+    <string name="no_threats">No threats found. Your device is clean.</string>
+    <string name="scan_cancelled">Scan cancelled</string>
+
+    <!-- Results -->
+    <string name="results_title">Scan results</string>
+    <string name="items_scanned">Items scanned</string>
+    <string name="duration">Duration</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="whitelist">Trust this app</string>
+    <string name="app_info">App info</string>
+    <string name="delete_file">Delete file</string>
+    <string name="export_report">Export report</string>
+    <string name="severity_critical">Critical</string>
+    <string name="severity_high">High</string>
+    <string name="severity_medium">Medium</string>
+    <string name="severity_low">Low</string>
+    <string name="severity_clean">Clean</string>
+
+    <!-- Apps / risk analyzer -->
+    <string name="apps_title">Permission risk</string>
+    <string name="risk_low">Low risk</string>
+    <string name="risk_medium">Medium risk</string>
+    <string name="risk_high">High risk</string>
+    <string name="search_apps">Search apps</string>
+    <string name="show_system_apps">Show system apps</string>
+    <string name="why_risky">Why this matters</string>
+    <string name="perm_sms">Can read and send your text messages, including security codes.</string>
+    <string name="perm_call_log">Can see who you call and when.</string>
+    <string name="perm_contacts">Can read your whole contact list.</string>
+    <string name="perm_location">Can track where you are.</string>
+    <string name="perm_mic">Can record audio with the microphone.</string>
+    <string name="perm_camera">Can take photos or video.</string>
+    <string name="perm_overlay">Can draw on top of other apps, which is used to fake login screens.</string>
+    <string name="perm_accessibility">Can read everything on screen and tap for you.</string>
+    <string name="perm_device_admin">Is a device administrator, so it is hard to remove.</string>
+    <string name="perm_install_packages">Can install other apps on your phone.</string>
+    <string name="perm_unknown_source">Was installed from outside the Play Store.</string>
+    <string name="perm_no_launcher">Has no icon in your app drawer, so it stays hidden.</string>
+
+    <!-- Tools -->
+    <string name="tools_title">Tools</string>
+    <string name="tool_wifi">WiFi security</string>
+    <string name="tool_applock">App lock</string>
+    <string name="tool_junk">Junk cleaner</string>
+    <string name="tool_link">Link checker</string>
+    <string name="tool_history">Scan history</string>
+    <string name="tool_privacy">Privacy</string>
+
+    <!-- WiFi -->
+    <string name="wifi_title">WiFi security</string>
+    <string name="wifi_not_connected">Not connected to WiFi</string>
+    <string name="wifi_open_warning">This network is open. Anyone nearby can read unencrypted traffic.</string>
+    <string name="wifi_wep_warning">This network uses WEP, which is broken and easy to crack.</string>
+    <string name="wifi_secure">This network uses modern encryption.</string>
+    <string name="wifi_rescan">Re-check network</string>
+    <string name="wifi_location_needed">Android requires location permission to read WiFi details. SafeShield never stores or sends your location.</string>
+
+    <!-- App lock -->
+    <string name="applock_title">App lock</string>
+    <string name="applock_service_label">SafeShield App Lock</string>
+    <string name="applock_service_description">Watches which app comes to the foreground so SafeShield can ask for your PIN or fingerprint before that app opens. No screen content is read, stored or sent anywhere.</string>
+    <string name="applock_enable">Enable app lock</string>
+    <string name="applock_set_pin">Set a 4–8 digit PIN</string>
+    <string name="applock_enter_pin">Enter PIN</string>
+    <string name="applock_wrong_pin">Wrong PIN</string>
+    <string name="applock_use_biometric">Use fingerprint</string>
+    <string name="applock_grant_usage">Grant usage access</string>
+    <string name="applock_grant_accessibility">Grant accessibility access</string>
+    <string name="applock_permission_explainer">App lock needs one of two permissions to know which app you just opened: Usage Access (recommended) or Accessibility. Pick whichever you prefer — both stay on your device.</string>
+    <string name="unlock_prompt">Unlock %1$s</string>
+
+    <!-- Junk -->
+    <string name="junk_title">Junk cleaner</string>
+    <string name="junk_scan">Find junk</string>
+    <string name="junk_clean">Clean %1$s</string>
+    <string name="junk_empty">Nothing to clean.</string>
+    <string name="junk_cache_note">On Android 8 and newer, apps cannot delete another app\'s cache. SafeShield shows the sizes and opens the system screen so you can clear them safely.</string>
+    <string name="junk_open_storage_settings">Open storage settings</string>
+
+    <!-- Link checker -->
+    <string name="link_title">Link checker</string>
+    <string name="link_hint">Paste a link (https://…)</string>
+    <string name="link_check">Check link</string>
+    <string name="link_safe">No threats reported for this link.</string>
+    <string name="link_unsafe">Dangerous link: %1$s</string>
+    <string name="link_invalid">That does not look like a valid link.</string>
+    <string name="link_needs_online">Link checking needs online mode. Turn it on in Settings.</string>
+
+    <!-- History -->
+    <string name="history_title">Scan history</string>
+    <string name="history_empty">No scans yet.</string>
+    <string name="clear_history">Clear history</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="setting_theme">Theme</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="setting_language">Language</string>
+    <string name="language_english">English</string>
+    <string name="language_urdu">اردو</string>
+    <string name="setting_online_mode">Online checks (VirusTotal)</string>
+    <string name="setting_online_mode_desc">Send only the SHA-256 hash of a file. Files are never uploaded.</string>
+    <string name="setting_realtime">Real-time protection</string>
+    <string name="setting_realtime_desc">Scan every app as soon as it is installed.</string>
+    <string name="setting_schedule">Scheduled scan</string>
+    <string name="schedule_off">Off</string>
+    <string name="schedule_daily">Daily</string>
+    <string name="schedule_weekly">Weekly</string>
+    <string name="setting_update_db">Update malware database</string>
+    <string name="setting_db_version">Signatures: %1$d · updated %2$s</string>
+    <string name="setting_remove_ads">Remove ads</string>
+    <string name="setting_ads_removed">Ads removed. Thank you!</string>
+    <string name="setting_delete_data">Delete all my data</string>
+    <string name="setting_delete_data_confirm">This permanently erases scan history, whitelist, app-lock settings and your PIN from this device. Continue?</string>
+    <string name="setting_data_deleted">All SafeShield data deleted.</string>
+    <string name="setting_privacy">Privacy</string>
+    <string name="setting_version">Version %1$s</string>
+
+    <!-- Privacy screen -->
+    <string name="privacy_title">Your privacy</string>
+    <string name="privacy_body">SafeShield collects no personal data.\n\n• Every scan runs on your device using a built-in signature database.\n• We have no account system, no analytics and no tracking SDKs.\n• We never read your messages, contacts, photos or location.\n• Nothing is shared with third parties.\n\nIf you switch on online mode, SafeShield sends one thing to VirusTotal: the SHA-256 hash of a file. A hash is a fingerprint — the file itself never leaves your phone. If you check a link, that single URL is sent to Google Safe Browsing. Both are off by default.\n\nScan history and settings are stored only in the app\'s private storage and are wiped by \"Delete all my data\".</string>
+
+    <!-- Permissions -->
+    <string name="perm_notifications_rationale">Allow notifications so SafeShield can warn you the moment a threat appears.</string>
+    <string name="perm_storage_rationale">To scan APK files, pick the folder you want checked. SafeShield only reads what you choose.</string>
+    <string name="grant">Allow</string>
+    <string name="not_now">Not now</string>
+    <string name="ok">OK</string>
+    <string name="retry">Retry</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_scan">Scan progress</string>
+    <string name="notif_channel_threat">Threat alerts</string>
+    <string name="notif_scanning_title">SafeShield is scanning</string>
+    <string name="notif_threat_title">Threat detected</string>
+    <string name="notif_threat_text">%1$s may be harmful. Tap to review.</string>
+    <string name="notif_clean_install_title">App checked</string>
+    <string name="notif_clean_install_text">%1$s looks safe.</string>
+
+    <!-- Errors -->
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_network">No internet connection. Offline scanning still works.</string>
+    <string name="error_api_key">Online checks are not configured in this build.</string>
+    <string name="error_rate_limited">Online service is busy. Try again in a minute.</string>
+    <string name="error_no_folder">No folder selected.</string>
+</resources>

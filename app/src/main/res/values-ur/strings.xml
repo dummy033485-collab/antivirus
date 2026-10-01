@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">سیف شیلڈ</string>
+
+    <string name="nav_home">ہوم</string>
+    <string name="nav_apps">ایپس</string>
+    <string name="nav_tools">اوزار</string>
+    <string name="nav_settings">ترتیبات</string>
+
+    <string name="home_title">سیف شیلڈ</string>
+    <string name="security_score">سیکیورٹی اسکور</string>
+    <string name="scan_now">اسکین کریں</string>
+    <string name="quick_scan">فوری اسکین</string>
+    <string name="full_scan">مکمل اسکین</string>
+    <string name="custom_scan">منتخب اسکین</string>
+    <string name="quick_scan_desc">تمام انسٹال شدہ ایپس کی جانچ۔ چند سیکنڈ لگتے ہیں۔</string>
+    <string name="full_scan_desc">انسٹال شدہ ایپس کے ساتھ اسٹوریج میں موجود APK فائلیں بھی۔</string>
+    <string name="custom_scan_desc">کوئی ایک فولڈر منتخب کریں اور صرف اسی کو اسکین کریں۔</string>
+    <string name="last_scan">آخری اسکین: %1$s</string>
+    <string name="never_scanned">آپ نے ابھی تک کوئی اسکین نہیں کیا</string>
+    <string name="protected_status">آپ محفوظ ہیں</string>
+    <string name="at_risk_status">توجہ درکار ہے</string>
+    <string name="offline_mode_badge">آف لائن انجن</string>
+    <string name="online_mode_badge">آف لائن + وائرس ٹوٹل</string>
+
+    <string name="scanning">اسکین جاری ہے…</string>
+    <string name="scanned_count">%2$d میں سے %1$d اسکین ہوئے</string>
+    <string name="threats_found">%1$d خطرات ملے</string>
+    <string name="time_remaining">تقریباً %1$s باقی</string>
+    <string name="pause">روکیں</string>
+    <string name="resume">جاری رکھیں</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="paused">رکا ہوا</string>
+    <string name="scan_complete">اسکین مکمل</string>
+    <string name="no_threats">کوئی خطرہ نہیں ملا۔ آپ کا فون صاف ہے۔</string>
+    <string name="scan_cancelled">اسکین منسوخ ہو گیا</string>
+
+    <string name="results_title">اسکین کے نتائج</string>
+    <string name="items_scanned">اسکین شدہ اشیاء</string>
+    <string name="duration">دورانیہ</string>
+    <string name="uninstall">ان انسٹال کریں</string>
+    <string name="whitelist">اس ایپ پر بھروسہ کریں</string>
+    <string name="app_info">ایپ کی معلومات</string>
+    <string name="delete_file">فائل حذف کریں</string>
+    <string name="export_report">رپورٹ محفوظ کریں</string>
+    <string name="severity_critical">انتہائی خطرناک</string>
+    <string name="severity_high">زیادہ خطرہ</string>
+    <string name="severity_medium">درمیانہ خطرہ</string>
+    <string name="severity_low">کم خطرہ</string>
+    <string name="severity_clean">محفوظ</string>
+
+    <string name="apps_title">اجازتوں کا خطرہ</string>
+    <string name="risk_low">کم خطرہ</string>
+    <string name="risk_medium">درمیانہ خطرہ</string>
+    <string name="risk_high">زیادہ خطرہ</string>
+    <string name="search_apps">ایپس تلاش کریں</string>
+    <string name="show_system_apps">سسٹم ایپس دکھائیں</string>
+    <string name="why_risky">یہ کیوں اہم ہے</string>
+    <string name="perm_sms">آپ کے پیغامات پڑھ اور بھیج سکتی ہے، بشمول حفاظتی کوڈز۔</string>
+    <string name="perm_call_log">دیکھ سکتی ہے کہ آپ کس کو اور کب کال کرتے ہیں۔</string>
+    <string name="perm_contacts">آپ کی پوری رابطہ فہرست پڑھ سکتی ہے۔</string>
+    <string name="perm_location">آپ کی جگہ کا پتہ لگا سکتی ہے۔</string>
+    <string name="perm_mic">مائیکروفون سے آواز ریکارڈ کر سکتی ہے۔</string>
+    <string name="perm_camera">تصویر یا ویڈیو بنا سکتی ہے۔</string>
+    <string name="perm_overlay">دوسری ایپس کے اوپر اسکرین بنا سکتی ہے، جو جعلی لاگ ان کے لیے استعمال ہوتی ہے۔</string>
+    <string name="perm_accessibility">اسکرین پر سب کچھ پڑھ سکتی ہے اور آپ کی جگہ ٹیپ کر سکتی ہے۔</string>
+    <string name="perm_device_admin">ڈیوائس ایڈمن ہے، اس لیے اسے ہٹانا مشکل ہے۔</string>
+    <string name="perm_install_packages">آپ کے فون پر دوسری ایپس انسٹال کر سکتی ہے۔</string>
+    <string name="perm_unknown_source">پلے اسٹور کے باہر سے انسٹال ہوئی ہے۔</string>
+    <string name="perm_no_launcher">ایپ لسٹ میں اس کا آئیکن نہیں، یعنی یہ چھپی ہوئی ہے۔</string>
+
+    <string name="tools_title">اوزار</string>
+    <string name="tool_wifi">وائی فائی سیکیورٹی</string>
+    <string name="tool_applock">ایپ لاک</string>
+    <string name="tool_junk">کچرا صاف کریں</string>
+    <string name="tool_link">لنک چیکر</string>
+    <string name="tool_history">اسکین کی تاریخ</string>
+    <string name="tool_privacy">پرائیویسی</string>
+
+    <string name="wifi_title">وائی فائی سیکیورٹی</string>
+    <string name="wifi_not_connected">وائی فائی سے منسلک نہیں</string>
+    <string name="wifi_open_warning">یہ نیٹ ورک کھلا ہے۔ قریب موجود کوئی بھی شخص آپ کا غیر محفوظ ڈیٹا پڑھ سکتا ہے۔</string>
+    <string name="wifi_wep_warning">یہ نیٹ ورک WEP استعمال کرتا ہے، جو کمزور اور آسانی سے توڑا جا سکتا ہے۔</string>
+    <string name="wifi_secure">یہ نیٹ ورک جدید خفیہ کاری استعمال کرتا ہے۔</string>
+    <string name="wifi_rescan">دوبارہ جانچیں</string>
+    <string name="wifi_location_needed">اینڈرائیڈ وائی فائی کی تفصیل کے لیے لوکیشن اجازت مانگتا ہے۔ سیف شیلڈ آپ کی لوکیشن کبھی محفوظ یا ارسال نہیں کرتی۔</string>
+
+    <string name="applock_title">ایپ لاک</string>
+    <string name="applock_service_label">سیف شیلڈ ایپ لاک</string>
+    <string name="applock_service_description">صرف یہ دیکھتی ہے کہ کون سی ایپ کھلی ہے تاکہ اسے کھولنے سے پہلے پن یا فنگر پرنٹ مانگا جا سکے۔ اسکرین کا مواد نہ پڑھا جاتا ہے، نہ محفوظ، نہ کہیں بھیجا جاتا ہے۔</string>
+    <string name="applock_enable">ایپ لاک فعال کریں</string>
+    <string name="applock_set_pin">4 سے 8 ہندسوں کا پن بنائیں</string>
+    <string name="applock_enter_pin">پن درج کریں</string>
+    <string name="applock_wrong_pin">غلط پن</string>
+    <string name="applock_use_biometric">فنگر پرنٹ استعمال کریں</string>
+    <string name="applock_grant_usage">استعمال کی رسائی دیں</string>
+    <string name="applock_grant_accessibility">ایکسیسبیلٹی رسائی دیں</string>
+    <string name="applock_permission_explainer">ایپ لاک کو یہ جاننے کے لیے دو میں سے ایک اجازت چاہیے کہ آپ نے کون سی ایپ کھولی: یوزیج ایکسیس (تجویز کردہ) یا ایکسیسبیلٹی۔ دونوں آپ کے فون تک محدود رہتی ہیں۔</string>
+    <string name="unlock_prompt">%1$s کھولیں</string>
+
+    <string name="junk_title">کچرا صاف کریں</string>
+    <string name="junk_scan">کچرا تلاش کریں</string>
+    <string name="junk_clean">%1$s صاف کریں</string>
+    <string name="junk_empty">صاف کرنے کے لیے کچھ نہیں۔</string>
+    <string name="junk_cache_note">اینڈرائیڈ 8 اور اس کے بعد ایک ایپ دوسری ایپ کا کیشے حذف نہیں کر سکتی۔ سیف شیلڈ سائز دکھاتی ہے اور سسٹم اسکرین کھول دیتی ہے تاکہ آپ خود محفوظ طریقے سے صاف کر سکیں۔</string>
+    <string name="junk_open_storage_settings">اسٹوریج ترتیبات کھولیں</string>
+
+    <string name="link_title">لنک چیکر</string>
+    <string name="link_hint">لنک پیسٹ کریں (https://…)</string>
+    <string name="link_check">لنک جانچیں</string>
+    <string name="link_safe">اس لنک پر کوئی خطرہ رپورٹ نہیں ہوا۔</string>
+    <string name="link_unsafe">خطرناک لنک: %1$s</string>
+    <string name="link_invalid">یہ درست لنک نہیں لگتا۔</string>
+    <string name="link_needs_online">لنک جانچنے کے لیے آن لائن موڈ ضروری ہے۔ ترتیبات میں آن کریں۔</string>
+
+    <string name="history_title">اسکین کی تاریخ</string>
+    <string name="history_empty">ابھی تک کوئی اسکین نہیں۔</string>
+    <string name="clear_history">تاریخ مٹائیں</string>
+
+    <string name="settings_title">ترتیبات</string>
+    <string name="setting_theme">تھیم</string>
+    <string name="theme_system">سسٹم کے مطابق</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تاریک</string>
+    <string name="setting_language">زبان</string>
+    <string name="language_english">English</string>
+    <string name="language_urdu">اردو</string>
+    <string name="setting_online_mode">آن لائن جانچ (وائرس ٹوٹل)</string>
+    <string name="setting_online_mode_desc">صرف فائل کا SHA-256 ہیش بھیجا جاتا ہے۔ فائلیں کبھی اپ لوڈ نہیں ہوتیں۔</string>
+    <string name="setting_realtime">فوری تحفظ</string>
+    <string name="setting_realtime_desc">ہر نئی انسٹال ہونے والی ایپ کو فوراً اسکین کریں۔</string>
+    <string name="setting_schedule">شیڈول اسکین</string>
+    <string name="schedule_off">بند</string>
+    <string name="schedule_daily">روزانہ</string>
+    <string name="schedule_weekly">ہفتہ وار</string>
+    <string name="setting_update_db">میلویئر ڈیٹابیس اپ ڈیٹ کریں</string>
+    <string name="setting_db_version">سگنیچرز: %1$d · اپ ڈیٹ %2$s</string>
+    <string name="setting_remove_ads">اشتہارات ہٹائیں</string>
+    <string name="setting_ads_removed">اشتہارات ہٹا دیے گئے۔ شکریہ!</string>
+    <string name="setting_delete_data">میرا تمام ڈیٹا حذف کریں</string>
+    <string name="setting_delete_data_confirm">اس سے اسکین تاریخ، وائٹ لسٹ، ایپ لاک ترتیبات اور آپ کا پن مستقل طور پر مٹ جائیں گے۔ جاری رکھیں؟</string>
+    <string name="setting_data_deleted">سیف شیلڈ کا تمام ڈیٹا حذف کر دیا گیا۔</string>
+    <string name="setting_privacy">پرائیویسی</string>
+    <string name="setting_version">ورژن %1$s</string>
+
+    <string name="privacy_title">آپ کی پرائیویسی</string>
+    <string name="privacy_body">سیف شیلڈ کوئی ذاتی معلومات جمع نہیں کرتی۔\n\n• ہر اسکین آپ کے فون پر، اندرونی سگنیچر ڈیٹابیس سے ہوتا ہے۔\n• نہ کوئی اکاؤنٹ، نہ اینالیٹکس، نہ ٹریکنگ۔\n• ہم آپ کے پیغامات، رابطے، تصاویر یا لوکیشن کبھی نہیں پڑھتے۔\n• کسی تیسرے فریق کے ساتھ کچھ شیئر نہیں کیا جاتا۔\n\nاگر آپ آن لائن موڈ آن کریں تو سیف شیلڈ وائرس ٹوٹل کو صرف فائل کا SHA-256 ہیش بھیجتی ہے۔ ہیش ایک فنگر پرنٹ ہے — فائل خود کبھی فون سے باہر نہیں جاتی۔ لنک جانچنے پر وہی ایک لنک گوگل سیف براؤزنگ کو بھیجا جاتا ہے۔ دونوں بطور ڈیفالٹ بند ہیں۔\n\nاسکین تاریخ اور ترتیبات صرف ایپ کی نجی اسٹوریج میں رہتی ہیں اور \"میرا تمام ڈیٹا حذف کریں\" سے مٹ جاتی ہیں۔</string>
+
+    <string name="perm_notifications_rationale">اطلاعات کی اجازت دیں تاکہ خطرے کی صورت میں سیف شیلڈ فوراً خبردار کر سکے۔</string>
+    <string name="perm_storage_rationale">APK فائلیں اسکین کرنے کے لیے وہ فولڈر منتخب کریں جسے جانچنا ہے۔ سیف شیلڈ صرف وہی پڑھتی ہے۔</string>
+    <string name="grant">اجازت دیں</string>
+    <string name="not_now">ابھی نہیں</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="retry">دوبارہ کوشش</string>
+
+    <string name="notif_channel_scan">اسکین کی پیش رفت</string>
+    <string name="notif_channel_threat">خطرے کی اطلاعات</string>
+    <string name="notif_scanning_title">سیف شیلڈ اسکین کر رہی ہے</string>
+    <string name="notif_threat_title">خطرہ ملا</string>
+    <string name="notif_threat_text">%1$s نقصان دہ ہو سکتی ہے۔ دیکھنے کے لیے ٹیپ کریں۔</string>
+    <string name="notif_clean_install_title">ایپ جانچی گئی</string>
+    <string name="notif_clean_install_text">%1$s محفوظ لگتی ہے۔</string>
+
+    <string name="error_generic">کچھ غلط ہو گیا۔ دوبارہ کوشش کریں۔</string>
+    <string name="error_network">انٹرنیٹ نہیں ہے۔ آف لائن اسکیننگ پھر بھی کام کرتی ہے۔</string>
+    <string name="error_api_key">اس بلڈ میں آن لائن جانچ ترتیب نہیں دی گئی۔</string>
+    <string name="error_rate_limited">آن لائن سروس مصروف ہے۔ ایک منٹ بعد کوشش کریں۔</string>
+    <string name="error_no_folder">کوئی فولڈر منتخب نہیں ہوا۔</string>
+</resources>

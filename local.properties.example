@@ -1,0 +1,6 @@
+# Copy to local.properties and fill in. local.properties is git-ignored.
+sdk.dir=/path/to/Android/sdk
+VIRUSTOTAL_API_KEY=your_virustotal_v3_api_key
+SAFE_BROWSING_API_KEY=your_google_safe_browsing_api_key
+ADMOB_APP_ID=ca-app-pub-3940256099942544~3347511713
+ADMOB_BANNER_ID=ca-app-pub-3940256099942544/6300978111
