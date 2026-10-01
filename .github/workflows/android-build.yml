@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  contents: read
+  contents: write
   issues: write
 
 jobs:
@@ -116,7 +116,7 @@ jobs:
             echo '```'
           } > failure.md
           gh api "repos/${GITHUB_REPOSITORY}/commits/${GITHUB_SHA}/comments" \
-            -f body="$(cat failure.md)" >/dev/null && echo "commit comment posted"
+            -f body="$(cat failure.md)" || echo "POST failed with $?"
 
       - name: Upload raw build log
         if: always()
